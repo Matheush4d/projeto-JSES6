@@ -252,3 +252,54 @@ emitter.on('User logged', data=> {
 });
 users.userLogged({user: 'Matheus Freitas'});
 
+
+// TESTES
+//Testes automatizados
+//testes unitários; são testes de pequenos portes
+//testes integrados; testao pequenos codigos em conjuto, para ver como se comportam juntos
+//testes funcionais; testa o código de ponta a ponta, para ver a sua funcionalidade
+
+// TESTES manuais e automatizados
+
+//testes usabilidade;
+//testes de aceitação do usuario;
+//protótipos;
+//testes funcionais;
+//exemplos;
+//alpha e beta;
+//mais...
+
+
+// FERRAMENTAS DE TESTE
+//teste de caraga e perfomance;
+//testes de segurança
+
+
+
+// TDD (TEST DRIVEN DEVELOPMENT)
+
+// É um dos pilares do Extreme Programing, conbsiste em testar e refatorar em pequenos ciclos,
+//onde você escreve o teste antes do código, faz o mesmo passar e refatora o código.
+
+// Escrita do teste =>>> Escrita do código =>>> Refatoração
+
+// VANTAGENS
+
+//Feedaback rápido
+//Maior segurança em alterções e novas funcionalidades
+//código mais limpo
+//produtividade
+
+
+// BDD (BEHAVIOR DRIVEN DEVELOPMENT)
+// Técnica de desenvolvimento ágil que visa integrar regras de negócio com linguagem de programação
+
+//Pilares
+//testes;
+//documentação;
+//exemplos;
+
+//Vantagens
+//Compartilhamento de conhecimento
+//documentação dinâmica
+//visão de todo
