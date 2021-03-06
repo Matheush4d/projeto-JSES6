@@ -303,3 +303,66 @@ users.userLogged({user: 'Matheus Freitas'});
 //Compartilhamento de conhecimento
 //documentação dinâmica
 //visão de todo
+
+
+//      *** COMO IDENTIFICAR ERROS ***
+
+// é usado o try catch para observar onde o erro está sendo aplicado
+
+// Além de strings na classe de erro, pode estendela
+
+class CustomError extends Error {
+    constructor({message, data}) {
+        super(message);
+        this.data =data;
+    }
+}
+
+try {
+    console.log(name);
+    const name ='Matheus Freitas';
+const myError = new CustomError ({
+    message: 'Custom message on custtom error',
+    data: {
+        type: 'Server error'
+    }
+}); // também pode instanciar o erro e tratalo apartir disso
+throw myError;
+} catch (err) {
+    console.log(err.data);
+    console.log(err); // quando o erro é tratado pelo try e catch ele segue normalmente
+} finally{
+
+console.log('Keep going...'); 
+}
+
+// ***** --- Debugging ---- *****
+// diretamente no navegador da apra checar defeitos no código
+// breakpoint para exatamente na linha de erro e é possivel modificalo pelo proprio navegador
+
+debugger; // o chrome já para exatamente onde está o erro, é uma outra forma de breakpoint
+
+// Console e suas variações
+
+//console.log('Black text');
+//console.warn('Yellow text with alert');
+//console.error('Red error text');
+
+//console.trace() onde ta sendo executado o código
+
+/*
+console.group('My group');
+console.log('Info inside group');
+console.log('More info inside group');
+console.groupEnd('My group')
+*/
+
+/*
+console.time('Log time');;
+setTimeout(() => {
+    console.timeEnd('Log time'); });
+*/
+
+// console.table(['Matheus Freitas', 'Dropingg']);
+//console.assert(1 === 0, 'Ops'); vai esperar ser verdadeiro para executar
+// console.log('%c styled log','color: blue','font-size: 1px');
