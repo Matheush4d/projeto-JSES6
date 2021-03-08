@@ -364,3 +364,6 @@ setTimeout(() => {
     console.timeEnd('Log time'); });
 */
 
+// console.table(['Matheus Freitas', 'Dropingg']);
+//console.assert(1 === 0, 'Ops'); vai esperar ser verdadeiro para executar
+// console.log('%c styled log','color: blue','font-size: 1px');
